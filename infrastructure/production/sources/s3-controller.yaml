@@ -1,0 +1,11 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: s3-controller
+  namespace: flux-system
+spec:
+  interval: 30s
+  ref:
+    tag: v0.0.7
+  url: https://github.com/aws-controllers-k8s/s3-controller

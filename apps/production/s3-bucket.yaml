@@ -1,0 +1,7 @@
+apiVersion: s3.services.k8s.aws/v1alpha1
+kind: Bucket
+metadata:
+  name: eks-gitops-workshop-s3-bucket
+  namespace: default
+spec:
+  name: eks-gitops-workshop-s3-bucket
